@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TerminalClient/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TerminalClient from './components/TerminalClient.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TerminalClient
   }
 }
 </script>
