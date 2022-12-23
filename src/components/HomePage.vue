@@ -39,6 +39,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 50px;
 
   section {
     width: 80%;
@@ -49,6 +50,7 @@ export default {
   .home-container {
     flex-direction: row;
     align-items: flex-start;
+    padding-bottom: 50px;
 
     section {
       width: 40%;

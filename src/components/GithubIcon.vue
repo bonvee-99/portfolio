@@ -12,6 +12,6 @@ svg {
 }
 
 svg:hover {
-  opacity: 0.6;
+  fill: $pill-color;
 }
 </style>
