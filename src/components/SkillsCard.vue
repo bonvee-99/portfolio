@@ -26,17 +26,22 @@ export default {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   div {
     width: 50%;
+  }
+
+  h2 {
+    text-align: center;
   }
 }
 
 ul {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
-  padding: 0;
 }
 
 li {

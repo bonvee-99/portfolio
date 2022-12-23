@@ -36,6 +36,23 @@ export default {
 
 .home-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+
+  section {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:800px) {
+  .home-container {
+    flex-direction: row;
+    align-items: flex-start;
+
+    section {
+      width: 40%;
+    }
+  }
 }
 </style>

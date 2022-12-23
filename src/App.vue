@@ -3,6 +3,12 @@
     <a href="#/">Home</a>
     <a href="#/basic">Basic View</a>
   </nav>
+  <section class="intro" v-if="this.currentPath === '#/' || this.currentPath === ''">
+    <h1>Welcome to my online resume!</h1>
+    <p>
+      My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am currently on Co-op working as a Software Developer. I also have worked as a teaching assistant at UBC for the past year. I am mainly interested in software architecture and engineering, as well as some security and distributed systems. I also like Muay Thai, hockey, walks, and video games. To read more about me you can either: (1) use the fun 'CLI' below (2) see everything at once <a href="#/basic">here</a> or (3) <a href="">download</a> my resume.
+    </p>
+  </section>
   <component :is="currentView" :resume="resume"/>
 </template>
 
@@ -76,6 +82,7 @@ const resume = {
       tools: "TypeScript/JavaScript, Node/Express, PostgreSQL, Next, Heroku",
       dateRange: "July 2021/July 2022",
       ghLink: "https://github.com/bonvee-99/ayt",
+      gifFile: "ayt-2",
       description: [
         "Collaborated to create a full stack web application that lets UBC students compare their course schedules",
         "Implemented Dynamic Routing on the Front-end with Next to allow for the creation and use of many shared calendars"
@@ -87,6 +94,7 @@ const resume = {
       tools: "TYPESCRIPT, HTML/CSS, AWS",
       dateRange: "Oct 2021 - Present",
       ghLink: "https://github.com/bonvee-99/nhl-macros-web",
+      gifFile: "sports-macros",
       webLink: "https://bonvee-nhl-macros.s3.us-west-1.amazonaws.com/macros/dist/index.html",
       description: [
         "Independently created a web application that automatically generates macros for media captioning and is used every Vancouver Canucks home game by professional NHL photographers"
@@ -98,7 +106,7 @@ const resume = {
       tools: "JavaScript, Node/Express, PostgreSQL, React, Redux Toolkit, Heroku",
       dateRange: "Aug 2021 ‑ Dec 2021",
       ghLink: "https://github.com/bonvee-99/samehere2",
-      asset: 'samehere-image',
+      imageFile: 'samehere-image',
       description: [
         "Independently developed a full stack web application to provide a specialized support platform for users with schizophrenia", 
         "Technical features include email verification, routing, authentication, and authorization with JWT tokens"
@@ -110,16 +118,17 @@ const resume = {
       tools: "Java, Swing, JUnit",
       dateRange: "Jan 2021 - May 2021",
       ghLink: "https://github.com/bonvee-99/ufc-world",
+      gifFile: "ufc-world",
       description: [
         "Independently designed a desktop application using Object-oriented design practices, Test-driven development, and local persistent storage with JSON"
       ]
     }
   ],
   skills: {
-    Languages: [ "TypeScript/JavaScript", "Java", "Go", "Python", "C", "C++", "GraphQL", "SQL" ],
+    Languages: [ "TypeScript", "Java", "Go", "Python", "C", "C++", "GraphQL", "SQL" ],
     "Front-end": ["Vue", "React", "Apollo Client", "HTML/CSS", "Vuetify", "Bootstrap", "Redux Toolkit"],
     "Back-end": ["Apollo Server", "Node/Express", "PostgreSQL", "MongoDB"],
-    "Tools/Environments": ["Docker", "Kubernetes", "Linux", "Unity", "Git", "Nginx", "Jenkins", "Latex", "Neovim"],
+    "Tools & Envs": ["Docker", "Kubernetes", "Linux", "Unity", "Git", "Nginx", "Jenkins", "Latex", "Neovim"],
     "Cloud Providers": ["GCP", "AWS", "Heroku"],
     "Testing": ["Mocha", "JUnit", "Jest", "LLDB", "Valgrind"]
   },
@@ -187,6 +196,7 @@ nav {
 .date {
   font-style: italic;
   font-size: 14px;
+  color: $grey-color;
 }
 
 ul {
@@ -199,5 +209,15 @@ h2 {
 
 h5 {
   margin: 0;
+}
+
+.intro {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    color: $blue-color;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="terminal" @click="focus">
+  <section class="terminal" @click="focus">
     <div class="line">
       <div>{{ section + prefix }}</div>
       <input ref="input" type="text" v-model="input" @keydown="handleInput">
@@ -7,7 +7,7 @@
     <div class="history">
       <div v-for="(item, index) in history" :key="index">{{ item }}</div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -146,7 +146,6 @@ export default {
 .terminal {
   display: flex;
   flex-direction: column-reverse;
-  width: 40%;
   height: 500px;
   background-color: $text-color;
   overflow: scroll;
