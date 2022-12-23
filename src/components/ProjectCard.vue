@@ -1,7 +1,13 @@
 <template>
   <section>
-    <h2>
+    <h2 v-if="currentItem.webLink" class="web-link">
       <a :href="currentItem.webLink">{{ currentItem.title }}</a>
+      <a :href="currentItem.ghLink">
+        <GithubIcon />
+      </a>
+    </h2>
+    <h2 v-else>
+      {{ currentItem.title }}
       <a :href="currentItem.ghLink">
         <GithubIcon />
       </a>
@@ -50,7 +56,7 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-h2 > a:hover {
+.web-link > a:hover {
   color: $pill-color;
 }
 </style>

@@ -82,7 +82,7 @@ nav {
   a {
     font-size: 20px;
     margin: 10px;
-    color: $text-color;
+    color: $blue-color;
   }
 
   a:hover {
@@ -114,7 +114,15 @@ h5 {
   text-align: center;
 
   h1 {
+    color: $text-color;
+  }
+
+  a {
     color: $blue-color;
+  }
+
+  a:hover {
+      color: $pill-color;
   }
 }
 </style>
