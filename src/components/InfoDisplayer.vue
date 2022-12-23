@@ -1,12 +1,12 @@
 <template>
-  <div class="info-container">
+  <section class="info-container">
     <ExperienceCard v-if="currentItem.type === 'experience'" :currentItem="currentItem"/>
     <ProjectCard v-else-if="currentItem.type === 'project'" :currentItem="currentItem"/>
     <SkillsCard v-else-if="currentItem.type === 'skills'" :currentItem="currentItem.list"/>
     <EducationCard v-else-if="currentItem.type === 'education'" :currentItem="currentItem"/>
     <ExtracurricularsCard v-else-if="currentItem.type === 'extracurriculars'" :currentItem="currentItem"/>
     <h2 v-else>Select an option to see more!</h2>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -36,7 +36,7 @@ export default {
 @import '@/styles/variables';
 
 .info-container {
-  width: 40%;
+  height: 500px;
   background-color: $bg-color;
   color: $text-color;
 }

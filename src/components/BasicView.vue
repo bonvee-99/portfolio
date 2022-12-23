@@ -1,6 +1,5 @@
 <template>
   <div class="main-container">
-    <a>Download Resume</a>
     <h1>Experience</h1>
     <ExperienceCard v-for="(exp, index) in resume.experience" :currentItem="exp" :key="index"/>
     <h1>Skills</h1>
@@ -45,7 +44,15 @@ export default {
   background-color: $bg-color;
 
   section {
-    width: 40%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:800px) {
+  .main-container {
+    section {
+      width: 40%;
+    }
   }
 }
 </style>
