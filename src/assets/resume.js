@@ -9,7 +9,7 @@ const resume = {
       description: [
         "Implemented various features and functionalities for the Front-end and Back-end components of the GCP deployed and managed Feltboard Platform",
         "Researched and implemented an image resize proxy using Docker and Nginx and configured it for deployment with GKE",
-        "Worked closely with Vue.js, Apollo GraphQL, Mongo, Express, and a variety of cloud services within GCP such as Cloud Storage, IoT Core, GKE, and Pub/Sub",
+        "Worked closely with Vue.js, Apollo GraphQL, Mongo, Express, and a variety of cloud services within GCP such as Cloud Storage, IoT Core, and GKE",
         "Reached 100% coverage when implementing tests for a YAML validation feature",
         "Presented features to the team as well as outside shareholders through forms such as tech-briefs and virtual presentations",
         "Collaborated with Product Designers, a QA Developer, a Software Architect, and other Software Developers in an Agile environment"
@@ -77,10 +77,10 @@ const resume = {
     }
   ],
   skills: {
-    Languages: [ "TypeScript", "Java", "Go", "Python", "C", "C++", "GraphQL", "SQL" ],
+    Languages: [ "TypeScript", "Java", "Go", "C", "C++", "GraphQL", "SQL" ],
     "Front-end": ["Vue", "React", "Apollo Client", "HTML/CSS", "Vuetify", "Bootstrap", "Redux Toolkit"],
     "Back-end": ["Apollo Server", "Node/Express", "PostgreSQL", "MongoDB"],
-    "Tools & Envs": ["Docker", "Kubernetes", "Linux", "Unity", "Git", "Nginx", "Jenkins", "Latex", "Neovim"],
+    "Tools & Envs": ["Docker", "Kubernetes", "Linux", "Unity", "Git", "Nginx", "Jenkins" ],
     "Cloud Providers": ["GCP", "AWS", "Heroku"],
     "Testing": ["Mocha", "JUnit", "Jest", "LLDB", "Valgrind"]
   },
