@@ -4,11 +4,26 @@
     <a href="#/basic">Basic View</a>
   </nav>
   <section class="intro" v-if="this.currentPath === '#/' || this.currentPath === ''">
-    <h1>Welcome to my website!</h1>
-    <p>
-      My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am currently on Co-op working as a Software Developer. I also have worked as a teaching assistant at UBC for over a year. I am mainly interested in software architecture and engineering, as well as some security and distributed systems. I also like Muay Thai, hockey, walks, and video games. To read more about me you can either: (1) use the fun 'CLI' below (2) see everything at once <a href="#/basic">here</a> or (3) <a :href="`${publicPath}resume.pdf`" target="_blank">download</a> my resume.
-    </p>
-    <img>
+    <div>
+      <h1>Welcome to my website!</h1>
+      <p>
+        My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am currently on Co-op working as a Software Developer. I also have worked as a teaching assistant at UBC for over a year. 
+      </p>
+      <p>
+        I am mainly interested in software architecture and engineering, as well as some security and distributed systems. I also like Muay Thai, hockey, walks, and video games. 
+      </p>
+    </div>
+    <img src="@/assets/lucy.webp">
+    <div>
+      <p>
+        To read more about me you can:
+      </p>
+      <ul>
+        <li>(1) use the fun 'CLI' below</li>
+        <li>(2) see everything at once <a href="#/basic">here</a></li>
+        <li>(3) <a :href="`${publicPath}resume.pdf`" target="_blank">download</a> my resume</li>
+      </ul>
+    </div>
   </section>
   <component :is="currentView" :resume="resume"/>
 </template>
@@ -78,6 +93,8 @@ nav {
   display: flex;
   justify-content: center;
   padding: 20px;
+  box-sizing: border-box;
+  height: 10vh;
 
   a {
     font-size: 20px;
@@ -109,12 +126,16 @@ h5 {
 }
 
 .intro {
-  width: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
   margin: 0 auto;
-  text-align: center;
 
   h1 {
     color: $text-color;
+    text-align: center;
   }
 
   a {
@@ -123,6 +144,28 @@ h5 {
 
   a:hover {
       color: $pill-color;
+  }
+
+  img {
+    border-radius: 50%;
+    border: 4px solid $pill-color;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    margin: 20px 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+@media only screen and (min-width:800px) {
+  .intro {
+    width: 75%;
+
+    img {
+      width: 25%;
+    }
   }
 }
 </style>
