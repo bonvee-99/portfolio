@@ -30,6 +30,9 @@ export default {
   },
   props: {
     resume: Object
+  },
+  mounted () {
+    window.scrollTo(0,0)
   }
 }
 </script>
