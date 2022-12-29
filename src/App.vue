@@ -4,13 +4,13 @@
     <a href="#/basic">Basic View</a>
   </nav>
   <section class="intro" v-if="this.currentPath === '#/' || this.currentPath === ''">
-    <div>
+    <div class="welcome">
       <h1>Welcome to my website!</h1>
       <p>
         My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am currently on Co-op working as a Software Developer. I also have worked as a teaching assistant at UBC for over a year. 
       </p>
       <p>
-        I am mainly interested in software architecture and engineering, as well as some security and distributed systems. I also like Muay Thai, hockey, walks, and video games. 
+        I am mainly interested in back-end development and software architecture, as well as some security and networking. I also like Muay Thai, hockey, walks, and video games. 
       </p>
     </div>
     <img src="@/assets/lucy.webp">
@@ -92,13 +92,13 @@ html, body {
 nav {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
   height: 10vh;
 
   a {
     font-size: 20px;
-    margin: 10px;
+    margin: 0 10px;
     color: $blue-color;
   }
 
@@ -133,6 +133,10 @@ h5 {
   min-height: 90vh;
   margin: 0 auto;
 
+  .welcome {
+    width: 100%;
+  }
+
   h1 {
     color: $text-color;
     text-align: center;
@@ -162,6 +166,10 @@ h5 {
 @media only screen and (min-width:800px) {
   .intro {
     width: 75%;
+
+    .welcome {
+      width: 60%;
+    }
 
     img {
       width: 25%;
