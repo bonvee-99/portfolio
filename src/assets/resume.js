@@ -89,7 +89,7 @@ const resume = {
       type: "education",
       school: "University of British Columbia",
       degree: "Bachelor of Computer Science",
-      dateRange: "Sept 2019 - 2025",
+      dateRange: "Sept 2019 - 2024",
       location: "Vancouver, BC",
       faculty: "Science",
       cumGpa: "84%",
