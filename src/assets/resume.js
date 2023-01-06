@@ -37,7 +37,7 @@ const resume = {
       gifFile: "ayt-2",
       description: [
         "Collaborated to create a full stack web application that lets UBC students compare their course schedules",
-        "Implemented Dynamic Routing on the Front-end with Next to allow for the creation and use of many shared calendars"
+        "Utilized dynamic routing to allow for the creation and use of many shared calendars"
       ]
     },
     {
@@ -60,13 +60,13 @@ const resume = {
       ghLink: "https://github.com/bonvee-99/samehere2",
       imageFile: 'samehere-image',
       description: [
-        "Independently developed a full stack web application to provide a specialized support platform for users with schizophrenia", 
+        "Independently developed a full stack web application to provide a support platform for users with schizophrenia", 
         "Technical features include email verification, routing, authentication, and authorization with JWT tokens"
       ]
     },
     {
       type: "project",
-      title: "UFC World",
+      title: "UFC World (Course Project)",
       tools: "Java, Swing, JUnit",
       dateRange: "Jan 2021 - May 2021",
       ghLink: "https://github.com/bonvee-99/ufc-world",
@@ -98,11 +98,42 @@ const resume = {
       ]
     }
   ],
-  extracurriculars: [ 
-    "WKC Continous Sparring Kickboxing (2022)",
-    "UBC Todd Ice Hockey League, Tier 1, Three Time Winners (Intramurals)",
-    "Cuse Hacks (2022)",
-    "Hack the 6ix, CockroachDB Sponser Prize (2021)"
+  extracurriculars: [
+    {
+      title: "WKC",
+      description: "Continous Sparring Kickboxing Competitor",
+      dateRange: "May 2022"
+    },
+    {
+      title: "UBC Todd Ice Hockey League",
+      description: "Three Time Winners, Tier 1",
+      dateRange: "2019-2022"
+    },
+    {
+      title: "UBC Technical Career Fair",
+      description: "Support Team",
+      dateRange: "Jan 2021"
+    },
+    {
+      title: "Hack the 6ix",
+      description: "CockroachDB Sponser Prize",
+      dateRange: "Aug 2021"
+    },
+    {
+      title: "Phi Gamma Delta",
+      description: "Freshman Scholarship Chairman",
+      dateRange: "Sept 2019 - March 2022"
+    },
+    {
+      title: "Canuck Place Children's Hospice",
+      description: "Peer Volunteer",
+      dateRange: "Jan 2018 - May 2019"
+    },
+    {
+      title: "Bumpin Bakery",
+      description: "Led youth team to help the less fortunate",
+      dateRange: "Jan 2016 - 2019"
+    }
   ]
 }
 
