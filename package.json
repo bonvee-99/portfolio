@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-router": "^4.1.6",
     "vue-terminal": "^1.2.0",
     "xterm": "^5.0.0",
     "xterm-addon-fit": "^0.6.0"
