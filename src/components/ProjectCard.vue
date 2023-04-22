@@ -12,7 +12,6 @@
         <GithubIcon />
       </a>
     </h2>
-    <h5>{{ currentItem.tools }}</h5>
     <span class="date">{{ currentItem.dateRange  }}</span>
     <ul>
       <li v-for="(item, index) in currentItem.description" :key="index">

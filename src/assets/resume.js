@@ -7,12 +7,15 @@ const resume = {
       dateRange: "July 2022 - Present",
       location: "Vancouver / Montreal, Canada (Hybrid)",
       description: [
-        "Implemented various features and functionalities for the Front-end and Back-end components of the GCP deployed and managed Feltboard Platform",
+        "Documented Datadog Agent installation for production deployment to GKE",
+        "Configured Datadog integrations, SLOs, RUM, synthetic tests, and monitors",
+        "Developed code utilizing GCP Cloud Functions, IoT Core, MQTT bridge, and Pub/Sub to track payload deliverability and latency across multiple services, and connected the system to Datadog for streamlined monitoring",
+        "Leveraged Telegraf and InfluxDB to establish an internal monitoring system and orchestrated its deployment through a GKE cluster using Terraform and Helm",
         "Researched and implemented an image resize proxy using Docker and Nginx and configured it for deployment with GKE",
-        "Worked closely with Vue.js, Apollo GraphQL, Mongo, Express, and a variety of cloud services within GCP such as Cloud Storage, IoT Core, and GKE",
-        "Reached 100% coverage when implementing tests for a YAML validation feature",
-        "Presented features to the team as well as outside shareholders through forms such as tech-briefs and virtual presentations",
-        "Collaborated with Product Designers, a QA Developer, a Software Architect, and other Software Developers in an Agile environment"
+        "Implemented a YAML validation feature and created unit tests with 100% coverage",
+        "Refactored Node and GraphQL code to support a new enrollment system",
+        "Collaborated with UI/UX designers when adding features to a Vue web app",
+        "Presented features to the team as well as outside stakeholders at Google"
       ]
     },
     {
@@ -22,7 +25,8 @@ const resume = {
       dateRange: "September 2021 - December 2022",
       location: "Vancouver, Canada",
       description: [
-        "Coordinated weekly labs of 30 students through effective communication with professors and other TAs, receiving perfect evaluations from over 80% of students in categories such as preparedness and teaching ability",
+        "Coordinated weekly labs of 30 students through effective communication with professors and other TAs",
+        "Received perfect evaluations from over 80% of students in categories such as communication, preparedness, and teaching ability",
         "Independently conducted weekly office hours to help students with introductory programming concepts using Racket"
       ]
     }
@@ -30,32 +34,42 @@ const resume = {
   projects: [
     {
       type: "project",
+      title: "Essentially",
+      dateRange: "Jan 2023 - Present",
+      ghLink: "https://github.com/ubclaunchpad/Essentially",
+      gifFile: "essentially",
+      description: [
+        "Collaborated on a Chrome extension that provides web page summaries",
+        "Deployed via AWS CDK, Lambda, and API Gateway and performed Node code refactoring during the process"
+      ]
+    },
+    {
+      type: "project",
       title: "Are You Taking",
-      tools: "TypeScript/JavaScript, Node/Express, PostgreSQL, Next, Heroku",
-      dateRange: "July 2021/July 2022",
+      dateRange: "July 2022",
       ghLink: "https://github.com/bonvee-99/ayt",
       gifFile: "ayt-2",
       description: [
-        "Collaborated to create a full stack web application that lets UBC students compare their course schedules",
-        "Utilized dynamic routing to allow for the creation and use of many shared calendars"
+        "Co-created a webapp with Next and Node to allow UBC students to compare their course schedules",
+        "Deployed via Heroku"
       ]
     },
     {
       type: "project",
       title: "Sports Macros",
-      tools: "TypeScript, HTML/CSS, AWS",
       dateRange: "Oct 2021 - Present",
       ghLink: "https://github.com/bonvee-99/nhl-macros-web",
       gifFile: "sports-macros",
       webLink: "https://bonvee-nhl-macros.s3.us-west-1.amazonaws.com/macros/dist/index.html",
       description: [
-        "Independently created a web application that automatically generates macros for media captioning and is used every Vancouver Canucks home game by professional NHL photographers"
+        "Independently created a web app using HTML/CSS that automatically generates macros for media captioning",
+        "Used every Vancouver Canucks home game by professional NHL photographers",
+        "Deployed via Amazon S3"
       ]
     },
     {
       type: "project",
       title: "Same Here",
-      tools: "JavaScript, Node/Express, PostgreSQL, React, Redux Toolkit, Heroku",
       dateRange: "Aug 2021 ‑ Dec 2021",
       ghLink: "https://github.com/bonvee-99/samehere2",
       imageFile: 'samehere-image',
@@ -67,20 +81,20 @@ const resume = {
     {
       type: "project",
       title: "UFC World (Course Project)",
-      tools: "Java, Swing, JUnit",
       dateRange: "Jan 2021 - May 2021",
       ghLink: "https://github.com/bonvee-99/ufc-world",
       gifFile: "ufc-world",
       description: [
-        "Independently designed a desktop application using Object-oriented design practices, Test-driven development, and local persistent storage with JSON"
+        "Independently designed a desktop UFC game with Java Swing",
+        "Incorporated Object-oriented design practices, Test-driven development, and local persistent storage with JSON"
       ]
     }
   ],
   skills: {
-    Languages: [ "TypeScript", "Java", "Go", "C", "C++", "GraphQL", "SQL" ],
-    "Front-end": ["Vue", "React", "Apollo Client", "HTML/CSS", "Vuetify", "Bootstrap", "Redux Toolkit"],
-    "Back-end": ["Apollo Server", "Node/Express", "PostgreSQL", "MongoDB"],
-    "Tools & Envs": ["Docker", "Kubernetes", "Linux", "Unity", "Git", "Nginx", "Jenkins" ],
+    Languages: [ "TypeScript", "Go", "Java", "C", "Bash"],
+    "Frontend": ["Vue", "React", "Vuetify", "Bootstrap", "Redux Toolkit"],
+    "Backend": ["Apollo GraphQL", "Node/Express", "PostgreSQL", "MongoDB"],
+    "Tools & Envs": ["Docker", "Kubernetes", "Terraform", "Unity", "Git", "Nginx", "Jenkins" ],
     "Cloud Providers": ["GCP", "AWS", "Heroku"],
     "Testing": ["Mocha", "JUnit", "Jest", "LLDB", "Valgrind"]
   },
@@ -99,6 +113,11 @@ const resume = {
     }
   ],
   extracurriculars: [
+    {
+      title: "UBC Launch Pad",
+      description: "Student-run software club that collaborates on application",
+      dateRange: "Jan 2023 - Present"
+    },
     {
       title: "WKC",
       description: "Continous Sparring Kickboxing Competitor",
@@ -121,7 +140,7 @@ const resume = {
     },
     {
       title: "Phi Gamma Delta",
-      description: "Freshman Scholarship Chairman",
+      description: "Freshman Philanthropy Chairman",
       dateRange: "Sept 2019 - March 2022"
     },
     {
