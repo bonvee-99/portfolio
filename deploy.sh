@@ -1,3 +1,6 @@
+git add .
+git commit -m "changes for main"
+git push
 git checkout --orphan gh-pages
 echo "Building started..."
 npm run build
