@@ -6,7 +6,7 @@
     <h6>{{ "Faculty of " + school.faculty }}</h6>
     <h4>{{ "Cumulative GPA: " + school.cumGpa}}</h4>
     <h4>{{ school.awards }}</h4>
-    <h3>Related Courses</h3>
+    <h3>Courses</h3>
     <ul>
       <li v-for="(s, index) in school.courses" :key="index">{{ s }}</li>
     </ul>

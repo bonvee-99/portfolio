@@ -6,12 +6,8 @@
   <section class="intro" v-if="this.currentPath === '#/' || this.currentPath === ''">
     <div class="welcome">
       <h1>Welcome to my website!</h1>
-      <p>
-        My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am currently on Co-op working as a Software Developer. I also have worked as a teaching assistant at UBC for over a year. 
-      </p>
-      <p>
-        I am mainly interested in backend development and software architecture. I also like Muay Thai, bass, hockey, walks, and video games. 
-      </p>
+      <p>{{ resume.intro[0] }}</p>
+      <p>{{ resume.intro[1] }}</p>
     </div>
     <img src="@/assets/lucy.webp">
     <div>
