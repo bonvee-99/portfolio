@@ -132,7 +132,8 @@ export default {
     initMessage() {
       this.history.push("Please choose from the following to see more:")
       Object.entries(this.resume).forEach(([key,], index) => {
-        this.history.push(`(${index}): ${key}`)
+        if (index === 0) return;
+        this.history.push(`(${index - 1}): ${key}`)
       });
       this.history.push("Type 'help' for more instructions")
     }

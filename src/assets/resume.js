@@ -1,7 +1,7 @@
 const resume = {
   intro: [
-    "My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am currently on Co-op working as a Software Developer. I have also worked as a CS teaching assistant at UBC for over a year.",
-    "I am mainly interested in backend development and software architecture. I also like Muay Thai, bass, hockey, plants, and video games."
+    "My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am on the lookout for a summer 2024 internship, prioritizing mentorship, community, and the chance to contribute to a genuinely impactful product that makes a positive difference in people's lives.",
+    "I have 14 months of experience working as a Software Developer for Thinkwell Studio Montreal where I took on diverse responsibilities, performing tasks in backend, frontend, and devops domains. I have also worked as a Computer Science teaching assistant at UBC for 3 semesters where I taught introductory CS concepts with Racket.",
   ],
   experience: [
     {
@@ -11,15 +11,17 @@ const resume = {
       dateRange: "July 2022 - August 2023",
       location: "Montreal, Canada (Remote)",
       description: [
-        "Collaborated on Feltboard content management app for experience design industry with Node and Vue",
-        "Setup Datadog monitoring and alerting in GKE clusters, configuring integrations, synthetic tests, and monitors",
-        "Developed payload analytics feature with GCP Cloud Functions, IoT Core, and Pub/Sub to track payload deliverability and latency across multiple services",
-        "Deployed analytics feature with Terraform and connected it to Datadog",
-        "Created TypeScript validation tool to maintain backward compatibility of payloads",
-        "Set up and deployed image resize proxy using Docker, Nginx, and GKE",
-        "Implemented a YAML parser to validate user input in new mapping feature",
-        "Wrote tests with 100% coverage for multiple backend features using Mocha and Chai",
-        "Refactored Node GraphQL backend to support new enrollment system"
+        "Collaborated on Feltboard, a Digital CMS for the Experience Design industry, utilizing Node.js and Vue.js",
+        "Facilitated dynamic schema relationships within the CMS, empowering clients to effortlessly create and manage intricate data structures by linking one schema to another",
+        "Implemented Node.js GraphQL queries and mutations to support a new enrollment system with IoT Core",
+        "Designed a YAML parser to validate user input and provide guidance for precise data mapping",
+        "Implemented real-time monitoring for a client service, displaying crucial metrics such as payload reception, errors, uptime, and system performance indicators",
+        "Developed a TypeScript validation tool to maintain backward compatibility of payloads used by third-party applications",
+        "Wrote tests with > 90% coverage for multiple backend features using Mocha and Chai",
+        "Developed a payload analytics feature with GCP Cloud Functions and Pub/Sub to track payload latency across services",
+        "Deployed analytics feature with Terraform and connected it to Datadog for streamlined monitoring and analysis",
+        "Orchestrated Datadog monitoring and alerting in GKE clusters, enhancing system visibility and system reliability",
+        "Deployed an image resize proxy using Docker, Nginx, and GKE to reduce service strain and optimize page load times",
       ]
     },
     {
@@ -29,83 +31,40 @@ const resume = {
       dateRange: "September 2021 - December 2022",
       location: "Vancouver, Canada",
       description: [
-        "Taught fundamental programming skills and structures with Racket",
-        "Led weekly labs and office hours for over 1200 students over three academic semesters",
-        "Received 100% favourable rating from over 70 students"
+        "Taught fundamental programming skills with Racket, receiving a 100% favourable rating from > 70 students",
+        "Led weekly labs and office hours for over 1200 students over three academic semesters"
       ]
     }
   ],
   projects: [
     {
       type: "project",
-      title: "DLS",
-      dateRange: "July 2023 - Present",
-      ghLink: "https://github.com/bonvee-99/dls",
-      description: [
-        "Co-created Rust CLI to share secrets with other developers over websockets",
-        "Secured messaging with TLS and end-to-end encryption"
-      ]
-    },
-    {
-      type: "project",
-      title: "Essentially",
-      dateRange: "Jan 2023 - Present",
-      ghLink: "https://github.com/ubclaunchpad/Essentially",
-      gifFile: "essentially",
-      description: [
-        "Collaborated on Chrome extension that provides web page summaries",
-        "Deployed via AWS CDK, Lambda, and API Gateway and performed Node code refactoring during the process"
-      ]
-    },
-    {
-      type: "project",
-      title: "Are You Taking",
-      dateRange: "July 2022",
-      ghLink: "https://github.com/bonvee-99/ayt",
-      gifFile: "ayt-2",
-      description: [
-        "Co-created web app with Next and Node to allow UBC students to compare their course schedules side by side",
-        "Users can seamlessly share their weekly schedules through iCal file uploads and dynamic calendar links"
-      ]
-    },
-    {
-      type: "project",
       title: "Sports Macros",
       dateRange: "Oct 2021 - Present",
       ghLink: "https://github.com/bonvee-99/nhl-macros-web",
       gifFile: "sports-macros",
-      webLink: "https://bonvee-nhl-macros.s3.us-west-1.amazonaws.com/macros/dist/index.html",
+      webLink: "https://bonvee-nhl-macros.s3.us-west-1.amazonaws.com/dist/index.html",
       description: [
-        "Independently created web app that automatically generates macros for media captioning",
-        "Used every Vancouver Canucks home game by professional NHL photographers"
+        "Independently created a web application with TypeScript, tailored for media professionals",
+        "Facilitates effortless generation of macros, optimizing the media captioning workflow within Photo Mechanic",
+        "Utilized by professional NHL photographers during every Vancouver Canucks home game, streamlining the captioning process with personalized macros"
       ]
     },
     {
       type: "project",
-      title: "Same Here",
-      dateRange: "Aug 2021 ‑ Dec 2021",
-      ghLink: "https://github.com/bonvee-99/samehere2",
-      imageFile: 'samehere-image',
+      title: "DLS",
+      dateRange: "July 2023 - Present",
+      ghLink: "https://github.com/bonvee-99/dls",
       description: [
-        "Independently developed full stack web application to provide support platform for users with schizophrenia", 
-        "Technical features include email verification, routing, authentication, and authorization with JWT tokens"
-      ]
-    },
-    {
-      type: "project",
-      title: "UFC World (Course Project)",
-      dateRange: "Jan 2021 - May 2021",
-      ghLink: "https://github.com/bonvee-99/ufc-world",
-      gifFile: "ufc-world",
-      description: [
-        "Independently designed desktop UFC game with Java Swing",
-        "Incorporated Object-oriented design practices, Test-driven development, and local persistent storage with JSON"
+        "Co-created a Rust Command-Line Interface designed for secure secret sharing among developers over websockets",
+        "Implemented end-to-end encryption using RSA public/private key pairs to ensure the confidentiality and security of shared secrets",
+        "Introduced the ability for users to join rooms through dynamically generated URLs"
       ]
     }
   ],
   skills: {
-    Languages: [ "TypeScript", "Python", "Rust", "Java", "C", "Bash"],
-    Tools: [ "Docker", "Kubernetes", "Terraform", "GCP", "AWS", "Node", "Vue", "React", "MongoDB", "PostgreSQl", "Apollo GraphQL" ]
+    Languages: [ "JavaScript/TypeScript", "Python", "Rust", "Java", "C", "Bash", "SQL", "NoSQL", "GraphQL", "HTML", "CSS"],
+    Tools: [ "Node", "Docker", "Kubernetes", "Terraform", "GCP", "AWS", "MongoDB", "PostgreSQL", "Vue", "React", "Linux", "Git", "Datadog", "MS Office" ]
   },
   education: [
     {
@@ -119,19 +78,25 @@ const resume = {
       awards: "Dean's Honour List (2019-2021)",
       courses: [
         "Software Construction (Java)", 
-        "Software Engineering (TypeScript)",
-        "Algorithms & Data Structures (C++)",
-        "Computer Hardware and Operating Systems (C)",
-        "Computer Networking (C)",
-        "Relational Databases"
+        "Software Engineering (TypeScript)", 
+        "Algorithms & Data Structures (C++)", 
+        "Algorithm Design & Analysis", 
+        "Computer Hardware & Operating Systems (C)",
+        "Relational Databases (SQL)",
+        "Computer Networking (C)"
       ]
     }
   ],
   extracurriculars: [
     {
       title: "UBC Launch Pad",
-      description: "Backend developer",
-      dateRange: "Jan 2023 - Present"
+      description: "Marketing Lead",
+      dateRange: "Sept 2023 - Present"
+    },
+    {
+      title: "UBC Launch Pad",
+      description: "Backend Developer",
+      dateRange: "Jan 2023 - May 2023"
     },
     {
       title: "WKC",
@@ -142,11 +107,6 @@ const resume = {
       title: "UBC Todd Ice Hockey League",
       description: "Three Time Winners, Tier 1",
       dateRange: "2019-2022"
-    },
-    {
-      title: "UBC Technical Career Fair",
-      description: "Support Team",
-      dateRange: "Jan 2021"
     },
     {
       title: "Hack the 6ix",

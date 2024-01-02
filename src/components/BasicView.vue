@@ -2,12 +2,12 @@
   <div class="main-container">
     <h1>Experience</h1>
     <ExperienceCard v-for="(exp, index) in resume.experience" :currentItem="exp" :key="index"/>
-    <h1>Skills</h1>
-    <SkillsCard :currentItem="resume.skills"/>
-    <h1>Education</h1>
-    <EducationCard :currentItem="{ list: resume.education }"/>
     <h1>Projects</h1>
     <ProjectCard v-for="(p, index) in resume.projects" :currentItem="p" :key="index"/>
+    <h1>Education</h1>
+    <EducationCard :currentItem="{ list: resume.education }"/>
+    <h1>Skills</h1>
+    <SkillsCard :currentItem="resume.skills"/>
     <ExtracurricularsCard :currentItem="{ list: resume.extracurriculars }"/>
   </div>
 </template>
