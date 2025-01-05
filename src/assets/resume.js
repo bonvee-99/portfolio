@@ -1,27 +1,39 @@
 const resume = {
   intro: [
-    "My name is Ben Vinnick and I am a 3rd year Computer Science student at the University of British Columbia. I am on the lookout for a summer 2024 internship, prioritizing mentorship, community, and the chance to contribute to a genuinely impactful product that makes a positive difference in people's lives.",
-    "I have 14 months of experience working as a Software Developer for Thinkwell Studio Montreal where I took on diverse responsibilities, performing tasks in backend, frontend, and devops domains. I have also worked as a Computer Science teaching assistant at UBC for 3 semesters where I taught introductory CS concepts with Racket.",
+    "I'm Ben Vinnick, a 4th-year Computer Science student at UBC based in Vancouver, BC. With hands-on experience as a Software Developer Intern at TAIT and a Teaching Assistant at the University of British Columbia, I’ve gained the skills to be an impactful contributor no matter the team I’m on.",
+    "At TAIT, I worked on both frontend and backend systems, creating user-friendly dashboards, optimizing media storage, and enhancing asset management workflows. As a Teaching Assistant, I guided hundreds of students through foundational programming concepts, helping them build confidence in topics like recursion, graph traversal, and debugging.",
+    "Currently completing my last semester of my Bachelor of Science in Computer Science, I’m working toward becoming a Software Architect, eager to design scalable systems and deliver meaningful, innovative solutions.",
   ],
   experience: [
     {
       type: "experience",
-      company: "Thinkwell Studio Montreal",
-      title: "Software Developer (Co-op)",
+      company: "TAIT",
+      title: "Software Developer Intern",
+      dateRange: "May 2024 - August 2024",
+      location: "Montreal, Canada (Remote)",
+      description: [
+        "Collaborated on Feltboard, a Digital CMS for the Experience Design industry used by Google",
+        "Optimized storage efficiency by implementing shared media buckets, reducing redundant uploads by up to 5X",
+        "Enhanced user workflow by creating a “save as” feature, allowing users to easily replicate and modify data structures",
+        "Streamlined asset management by implementing media replacement, facilitating seamless updates without disrupting ongoing processes"
+      ]
+    },
+    {
+      type: "experience",
+      company: "TAIT",
+      title: "Software Developer Intern",
       dateRange: "July 2022 - August 2023",
       location: "Montreal, Canada (Remote)",
       description: [
-        "Collaborated on Feltboard, a Digital CMS for the Experience Design industry, utilizing Node.js and Vue.js",
-        "Facilitated dynamic schema relationships within the CMS, empowering clients to effortlessly create and manage intricate data structures by linking one schema to another",
-        "Implemented Node.js GraphQL queries and mutations to support a new enrollment system with IoT Core",
+        "Developed a frontend dashboard using Vue to allow users to monitor key metrics within their connected devices",
+        "Facilitated dynamic schema relationships within the backend, empowering users to effortlessly create and manage intricate content structures by referencing one schema from another",
+        "Implemented queries and mutations for the GraphQL API to support a new device enrollment system",
         "Designed a YAML parser to validate user input and provide guidance for precise data mapping",
-        "Implemented real-time monitoring for a client service, displaying crucial metrics such as payload reception, errors, uptime, and system performance indicators",
-        "Developed a TypeScript validation tool to maintain backward compatibility of payloads used by third-party applications",
-        "Wrote tests with > 90% coverage for multiple backend features using Mocha and Chai",
-        "Developed a payload analytics feature with GCP Cloud Functions and Pub/Sub to track payload latency across services",
-        "Deployed analytics feature with Terraform and connected it to Datadog for streamlined monitoring and analysis",
-        "Orchestrated Datadog monitoring and alerting in GKE clusters, enhancing system visibility and system reliability",
+        "Developed a validation tool with TypeScript to maintain backward compatibility of payloads sent to 3rd-party devices",
+        "Implemented unit tests for GraphQL queries and mutations using Mocha, Chai, and Sinon",
         "Deployed an image resize proxy using Docker, Nginx, and GKE to reduce service strain and optimize page load times",
+        "Developed payload analytics feature with GCP Cloud Functions and Pub/Sub to track payload latency across services",
+        "Deployed analytics feature with Terraform and connected it to Datadog for streamlined monitoring and analysis"
       ]
     },
     {
@@ -31,7 +43,8 @@ const resume = {
       dateRange: "September 2021 - December 2022",
       location: "Vancouver, Canada",
       description: [
-        "Taught fundamental programming skills with Racket, receiving a 100% favourable rating from > 70 students",
+        "Taught fundamental programming skills and concepts such as recursion, graph traversal, testing, and debugging",
+        "Received a 100% favourable rating from > 70 students",
         "Led weekly labs and office hours for over 1200 students over three academic semesters"
       ]
     }
@@ -47,7 +60,7 @@ const resume = {
       description: [
         "Independently created a web application with TypeScript, tailored for media professionals",
         "Facilitates effortless generation of macros, optimizing the media captioning workflow within Photo Mechanic",
-        "Utilized by professional NHL photographers during every Vancouver Canucks home game, streamlining the captioning process with personalized macros"
+        "Utilized by professional NHL photographers during every Vancouver Canucks home game for the past 3 seasons"
       ]
     },
     {
@@ -56,15 +69,16 @@ const resume = {
       dateRange: "July 2023 - Present",
       ghLink: "https://github.com/bonvee-99/dls",
       description: [
-        "Co-created a Rust Command-Line Interface designed for secure secret sharing among developers over websockets",
-        "Implemented end-to-end encryption using RSA public/private key pairs to ensure the confidentiality and security of shared secrets",
+        "Co-created a Rust CLI designed for secure secret sharing among developers over Websockets",
+        "Implemented end-to-end encryption using RSA public/private key pairs to ensure the security of shared secrets",
         "Introduced the ability for users to join rooms through dynamically generated URLs"
       ]
     }
   ],
   skills: {
-    Languages: [ "JavaScript/TypeScript", "Python", "Rust", "Java", "C", "Bash", "SQL", "NoSQL", "GraphQL", "HTML", "CSS"],
-    Tools: [ "Node", "Docker", "Kubernetes", "Terraform", "GCP", "AWS", "MongoDB", "PostgreSQL", "Vue", "React", "Linux", "Git", "Datadog", "MS Office" ]
+    Languages: ["Java", "TypeScript", "JavaScript", "Java", "Python", "Rust", "Bash", "SQL", "NoSQL", "GraphQL", "HTML", "CSS"],
+    Frameworks: ["Node", "Vue", "React", "JUnit", "Mocha", "Chai"],
+    Other: ["Git", "Docker", "Kubernetes", "GCP", "AWS", "Terraform", "Jenkins", "Datadog", "Jira"]
   },
   education: [
     {
@@ -77,13 +91,14 @@ const resume = {
       cumGpa: "3.9",
       awards: "Dean's Honour List (2019-2021)",
       courses: [
-        "Software Construction (Java)", 
-        "Software Engineering (TypeScript)", 
-        "Algorithms & Data Structures (C++)", 
-        "Algorithm Design & Analysis", 
-        "Computer Hardware & Operating Systems (C)",
-        "Relational Databases (SQL)",
-        "Computer Networking (C)"
+        "Intermediate Algorithm Design & Analysis",
+        "Computer Hardware & Operating Systems",
+        "Applied Machine Learning",
+        "Relational Databases",
+        "Computer Networking",
+        "Parallel Computation",
+        "Computer Security", 
+        "Distributed Systems",
       ]
     }
   ],
@@ -91,7 +106,7 @@ const resume = {
     {
       title: "UBC Launch Pad",
       description: "Marketing Lead",
-      dateRange: "Sept 2023 - Present"
+      dateRange: "Sept 2023 - April 2024"
     },
     {
       title: "UBC Launch Pad",
@@ -116,7 +131,7 @@ const resume = {
     {
       title: "Phi Gamma Delta",
       description: "Freshman Philanthropy Chairman",
-      dateRange: "Sept 2019 - March 2022"
+      dateRange: "Sept 2019 - March 2020"
     },
     {
       title: "Canuck Place Children's Hospice",

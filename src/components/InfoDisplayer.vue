@@ -5,7 +5,7 @@
     <SkillsCard v-else-if="currentItem.type === 'skills'" :currentItem="currentItem.list"/>
     <EducationCard v-else-if="currentItem.type === 'education'" :currentItem="currentItem"/>
     <ExtracurricularsCard v-else-if="currentItem.type === 'extracurriculars'" :currentItem="currentItem"/>
-    <h2 v-else>Select an option to see more!</h2>
+    <!-- <h2 v-else>Select an option to see more!</h2> -->
   </section>
 </template>
 
@@ -36,7 +36,7 @@ export default {
 @import '@/styles/variables';
 
 .info-container {
-  height: 500px;
+  height: 100%;
   background-color: $bg-color;
   color: $text-color;
 }

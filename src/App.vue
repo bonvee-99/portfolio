@@ -1,13 +1,14 @@
 <template>
   <nav>
     <a href="#/">Home</a>
-    <a href="#/basic">Basic View</a>
+    <a href="#/basic">Experience</a>
   </nav>
   <section class="intro" v-if="this.currentPath === '#/' || this.currentPath === ''">
     <div class="welcome">
       <h1>Welcome to my website!</h1>
       <p>{{ resume.intro[0] }}</p>
       <p>{{ resume.intro[1] }}</p>
+      <p>{{ resume.intro[2] }}</p>
     </div>
     <img src="@/assets/lucy.webp">
     <div>
@@ -15,9 +16,9 @@
         To read more about me you can:
       </p>
       <ul>
-        <li>(1) use the fun 'CLI' below</li>
-        <li>(2) see everything at once <a href="#/basic">here</a></li>
-        <li>(3) <a :href="`${publicPath}resume.pdf`" target="_blank">download</a> my resume</li>
+        <!-- <li>(1) use the fun 'CLI' below</li> -->
+        <li>(1) See a prettier? version of my resume <a href="#/basic">here</a></li>
+        <li>(2) <a :href="`${publicPath}resume.pdf`" target="_blank">download</a> my resume</li>
       </ul>
     </div>
   </section>

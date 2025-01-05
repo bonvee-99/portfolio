@@ -1,18 +1,18 @@
 <template>
   <div class="home-container">
-    <TerminalClient :updateItem="updateItem" :resume="resume"/>
+    <!-- <TerminalClient :updateItem="updateItem" :resume="resume"/> -->
     <InfoDisplayer :currentItem="currentItem"/>
   </div>
 </template>
 
 <script>
-import TerminalClient from '@/components/TerminalClient.vue'
+// import TerminalClient from '@/components/TerminalClient.vue'
 import InfoDisplayer from '@/components/InfoDisplayer.vue'
 
 export default {
   name: "HomePage",
   components: {
-    TerminalClient,
+    // TerminalClient,
     InfoDisplayer
   },
   props: {
