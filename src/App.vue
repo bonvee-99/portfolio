@@ -22,6 +22,13 @@
       </ul>
     </div>
   </section>
+  <footer>
+    <div>
+      <a href="https://michaelfromorg.github.io/ubc-webring/" target="_blank" rel="noopener noreferrer">
+        <img :src="`${publicPath}ubc-coa.svg`" alt="UBC Webring" width="36" height="50">
+      </a>
+    </div>
+  </footer>
   <component :is="currentView" :resume="resume"/>
 </template>
 
@@ -77,6 +84,20 @@ export default {
   height: 100%;
   background-color: $bg-color;
   color: $text-color;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer div a img {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+footer div a img:hover {
+  background-color: $pill-color;
 }
 
 html, body {
