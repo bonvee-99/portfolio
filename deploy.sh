@@ -1,22 +1,15 @@
-set -e
-
-# 1. Build the project
-echo "🏗  Building..."
-npm run build
-
-# 2. Add CNAME to dist if needed
-cp CNAME dist/CNAME
-
-# 3. Create an orphan branch and push the dist folder as root
-echo "🚀 Deploying to gh-pages..."
+git add .
+git commit -m "changes for main"
+git push
 git checkout --orphan gh-pages
-git --work-tree=dist add --all
-git --work-tree=dist commit -m "gh-pages"
+echo "Building started..."
+npm run build
+cp CNAME dist/CNAME
+git --work-tree dist add --all
+git --work-tree dist commit -m "gh-pages"
+echo "Pushing to gh-pages..."
 git push origin HEAD:gh-pages --force
-
-# 4. Cleanup
-git checkout main
+rm -r dist
+git checkout -f main
 git branch -D gh-pages
-rm -rf dist
-
-echo "✅ Successfully deployed!"
+echo "Successfully deployed"
