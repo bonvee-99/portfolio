@@ -1,14 +1,22 @@
-git add .
-git commit -m "changes for main"
-git push
-git checkout --orphan gh-pages
-echo "Building started..."
+set -e
+
+# 1. Build the project
+echo "🏗  Building..."
 npm run build
-git --work-tree dist add --all
-git --work-tree dist commit -m "gh-pages"
-echo "Pushing to gh-pages..."
+
+# 2. Add CNAME to dist if needed
+cp CNAME dist/CNAME
+
+# 3. Create an orphan branch and push the dist folder as root
+echo "🚀 Deploying to gh-pages..."
+git checkout --orphan gh-pages
+git --work-tree=dist add --all
+git --work-tree=dist commit -m "gh-pages"
 git push origin HEAD:gh-pages --force
-rm -r dist
-git checkout -f main
+
+# 4. Cleanup
+git checkout main
 git branch -D gh-pages
-echo "Successfully deployed"
+rm -rf dist
+
+echo "✅ Successfully deployed!"
